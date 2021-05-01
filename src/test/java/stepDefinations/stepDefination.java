@@ -18,6 +18,7 @@ public class stepDefination extends Base{
 	@Given("^driver initialize$")
 	public void driver_initialize() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("Initialzie the driver");
 		driver=initailizedriver();
 	   
 	}
@@ -53,6 +54,7 @@ public class stepDefination extends Base{
 	@Then("^close browser$")
 	public void close_browser() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("closing the browser");
 	   driver.close();
 	}
 
