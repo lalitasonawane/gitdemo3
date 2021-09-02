@@ -29,6 +29,10 @@ public class LoginPage {
 	public WebElement submit() {
 		return driver.findElement(submit);
 	}
-	
+	public forgotPassword forgetPassword() {
+		driver.findElement(forgetpasswordlink).click();
+		forgotPassword fp=new forgotPassword(driver);
+		return fp;
+	}
 	
 }

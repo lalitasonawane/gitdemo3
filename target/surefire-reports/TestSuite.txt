@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 137.402 s <<< FAILURE! - in TestSuite
+firsttest(MainProject.E2EProject.ValidateTitleText)  Time elapsed: 112.83 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-KFSGMIP', ip: '169.254.57.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: driver.version: ChromeDriver
+	at MainProject.E2EProject.ValidateTitleText.firsttest(ValidateTitleText.java:31)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:24906/status] to be available after 20007 ms
+	at MainProject.E2EProject.ValidateTitleText.firsttest(ValidateTitleText.java:31)
+Caused by: java.util.concurrent.TimeoutException
+	at MainProject.E2EProject.ValidateTitleText.firsttest(ValidateTitleText.java:31)
+

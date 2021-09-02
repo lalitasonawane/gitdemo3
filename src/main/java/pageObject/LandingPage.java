@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LandingPage {
-	
-public WebDriver driver;
+
+	public WebDriver driver;
 	
 	private By popupclose=By.className("sumome-react-svg-image-container");
 	private By login=By.cssSelector("a[href*='sign_in']");
@@ -16,7 +16,7 @@ public WebDriver driver;
 	private By navelements=By.className(".nav.navbar-nav.navbar-right>li>a");
 	private By productlist=By.cssSelector("ul[class *= 'course-list'] li");
 	
-	public LandingPage(WebDriver driver) {
+	public LandingPage( WebDriver driver) {
 		this.driver=driver;
 		
 	}
@@ -41,5 +41,4 @@ public WebDriver driver;
 	public List<WebElement> Checkproductlist() {
 		return driver.findElements(productlist);
 	}
-
-}
+	}
